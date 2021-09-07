@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css" />
+    
+    <title>Estilizando Página</title>
+</head>
+<body>
+    <main>
+            <form action="">
+                <h2>Escolha o estilo da sua página</h2>
+                <div>
+                    <label for="color1">Cor 1</label>
+                    <input type="color" id="color1"/>
+                </div>
+                <div>
+                    <label for="color2">Cor 2</label>
+                    <input type="color" id="color2"/>
+                </div>
+                <div>
+                    <label for="degrees">Quatidade em graus *</label>
+                    <input type="number" id="degrees" required="required" min="0" max="360"/>
+                </div>
+                <div>
+                    <label for="color-font">Cor da fonte</label>
+                    <input type="color" id="color-font"/>
+                </div>
+                <div>
+                    <label for="text">Digite o texto</label>
+                    <textarea id="text"></textarea>
+                </div>
+                <div>
+                    <label for="font-size">Tamanho da fonte</label>
+                    <input type="number" id="font-size" />
+                </div>
+                <button type="submit" id="button-style">Estilizar</button>
+                <button type="reset" id="button-clean">Redefinir</button>
+            </form>
+            
+        <div class="render-style">
+            <div class="div-text">
+                
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
